@@ -27,8 +27,7 @@ public class doctorServices {
     }
 
 
-    public doctor DeleteData(long dId)
-    {
+    public doctor DeleteData(long dId) {
         doctor fetch=doctorRepository.findById(dId).orElse(null);
         if(fetch!=null){
             doctorRepository.delete(fetch);

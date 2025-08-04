@@ -12,7 +12,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HospitalProjectApplication implements CommandLineRunner {
+public class HospitalProjectApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(HospitalProjectApplication.class, args);}
@@ -22,7 +22,7 @@ public class HospitalProjectApplication implements CommandLineRunner {
 		private patientsRepository patientsRepository;
 		@Autowired
 		private appointmentsRepository appointmentsRepository;
-
+/*
 	@Override
 	public void run(String... args) throws Exception {
 		doctor docob= new doctor();
@@ -42,4 +42,6 @@ public class HospitalProjectApplication implements CommandLineRunner {
 		appointmentsRepository.save(aob);
 
 	}
+
+ */
 }

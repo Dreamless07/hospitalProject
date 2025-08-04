@@ -23,11 +23,11 @@ public class doctorController {
     public ResponseEntity<doctor> InsertDoctor(@RequestBody doctor doc){
         return ResponseEntity.ok(doctorServices.InsertDoctor(doc));
     }
-    @PutMapping("{id}")
+    @PutMapping("{dId}")
     public ResponseEntity<doctor> UpdateDoctor(@PathVariable long dId,@RequestBody doctor updateob){
         return ResponseEntity.ok(doctorServices.UpdateDoctor(dId, updateob));
     }
-    @DeleteMapping("{id}")
+    @DeleteMapping("{dId}")
     public ResponseEntity<doctor> DeleteData(@PathVariable long dId){
         return ResponseEntity.ok(doctorServices.DeleteData(dId));
     }

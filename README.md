@@ -14,6 +14,7 @@ This repository is a hands-on learning project built using **Spring Boot**, show
 - **Maven**
 - **RESTful API**
 - **SQL**
+- **Postman**
 
 ---
 
@@ -22,8 +23,9 @@ This repository is a hands-on learning project built using **Spring Boot**, show
 - ✅ Layered architecture (Controller → Service → Repository)
 - ✅ Entity mapping using JPA
 - ✅ CRUD operations using Spring Data JPA
-- ✅ REST API endpoints
+- ✅ REST API and Tesing using Postman
 - ✅ Custom query methods
 - ✅ Database setup using SQL or JPA auto-DDL
 - ✅ Data validation using `@Valid` and `@NotNull`
+
 

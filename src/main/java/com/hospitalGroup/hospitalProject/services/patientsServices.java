@@ -23,10 +23,9 @@ public class patientsServices {
 
     public patients UpdatePatients(long pId, patients patients1) {
         patients f=patientsRepository.findById(pId).orElse(null);
-        f.setPName(f.getPName());
-        f.setAge(f.getAge());
+        f.setPName(patients1.getPName());
+        f.setAge(patients1.getAge());
         return patientsRepository.save(f);
-
     }
 
     public patients DeletePatients(long pId) {

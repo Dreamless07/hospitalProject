@@ -21,11 +21,11 @@ public class appointmentsServices {
         return appointmentsRepository.save(appointments);
     }
 
-    public appointments UpdateAppointments(long aId, appointments appointments) {
+    public appointments UpdateAppointments(long aId, appointments appointments1) {
         appointments apfetch=appointmentsRepository.findById(aId).orElse(null);
-        apfetch.setDoctor(apfetch.getDoctor());
-        apfetch.setPatients(apfetch.getPatients());
-        apfetch.setDate(apfetch.getDate());
+        apfetch.setDoctor(appointments1.getDoctor());
+        apfetch.setPatients(appointments1.getPatients());
+        apfetch.setDate(appointments1.getDate());
         return appointmentsRepository.save(apfetch);
     }
 

@@ -23,8 +23,8 @@ public class appointmentsController {
         return ResponseEntity.ok(appointmentsServices.InsertAppointments(appointments));
     }
     @PutMapping("{aId}")
-    public ResponseEntity<appointments> UpdateAppointments(@PathVariable long aId, @RequestBody appointments appointments){
-        return ResponseEntity.ok(appointmentsServices.UpdateAppointments(aId, appointments));
+    public ResponseEntity<appointments> UpdateAppointments(@PathVariable long aId, @RequestBody appointments appointments1){
+        return ResponseEntity.ok(appointmentsServices.UpdateAppointments(aId, appointments1));
     }
     @DeleteMapping("{aId}")
     public ResponseEntity<appointments> DeleteAppointments(@PathVariable long aId){
